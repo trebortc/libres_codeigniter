@@ -64,7 +64,7 @@ class Inicio extends CI_Controller {
 		$this->load->view('template/piedepagina');		
 	}
 
-	public function contactos()
+	public function contacto()
 	{
 		$this->load->view('template/cabecera');
 		$this->load->view('template/contactos');
@@ -122,7 +122,61 @@ class Inicio extends CI_Controller {
         }	
 	}
 
-	
+	public function teayudamos()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/teayudamos');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+	public function talleresdesensibilizacion()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/talleresdesensibilizacion');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+	public function asistenciapsicologica()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/asistenciapsicologica');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+	public function gruposdeautoapoyo()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/gruposdeautoapoyo');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
 
 	
 

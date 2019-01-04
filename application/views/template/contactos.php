@@ -14,17 +14,17 @@
 </div>
 
 <div class="container-fluid" id="contactos">
-    <div class="row pt-3 pl-5 pb-3" style="background-color:rgb(54, 56, 57)">
+    <div class="row pt-3 pl-5 pb-3 btn-light">
         <div class="col">
             <?php 
-                echo "<img src='".base_url()."/assets/img/econ_b.svg' alt='financiamiento' class='pr-3'>";
+                echo "<img src='".base_url()."/assets/img/logo.png' alt='financiamiento' class='pr-3'>";
             ?>
         </div>
-        <div class="col align-self-end text-white pl-5">
-            <div><h5><strong>CONTÁCTENOS</strong></h5></div>
+        <div class="col align-self-end pl-5">
+            <div class="btn-secondary text-center"><h5><strong>CONTÁCTENOS</strong></h5></div>
         </div>
     </div>
-    <div class="row p-5" style="background-color: rgb(54, 56, 57)">
+    <div class="row p-5 btn-danger">
         <div class="col-md-6 col-sm-12">
             <div class="row">
                 <div class="col">
@@ -62,32 +62,32 @@
         <div class="col-md-6 col-sm-12 text-white">
             <div class="row pl-4">
                 <div class="col">
-                    <p class="lead font-size-1"> <i class="fa fa-building fa-lg" aria-hidden="true"></i>  Edif. Daniel Cárdenas 6to Piso Ofic. 601</p>
+                    <p class="lead font-size-1"> <i class="fa fa-building fa-lg" aria-hidden="true"></i>  Edif. Ejemplo nombre 6to Piso Ofic. 111</p>
                 </div>
             </div>
             <div class="row pl-4">
                 <div class="col">
-                    <p class="lead font-size-1"><i class="fa fa-road fa-lg" aria-hidden="true"></i>  Calle Luis Saa N14-20 y Sodiro <br>(Diagonal a maternidad – Sector Alameda)</p>
+                    <p class="lead font-size-1"><i class="fa fa-road fa-lg" aria-hidden="true"></i> Gaspar de Villarroel, y 6 de Diciembre</p>
                 </div>
             </div>
             <div class="row pl-4">
                 <div class="col">
-                    <p class="lead font-size-1"><i class="fa fa-fax fa-lg" aria-hidden="true"></i>  (02) 2900 930 </p>
+                    <p class="lead font-size-1"><i class="fa fa-fax fa-lg" aria-hidden="true"></i>  (02) 22222 222 </p>
                 </div>
             </div>
             <div class="row pl-4">
                 <div class="col">
-                    <p class="lead font-size-1"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>  (02) 2900 952</p>
+                    <p class="lead font-size-1"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>  (02) 2222 222</p>
                 </div>
             </div>
             <div class="row pl-4">
                 <div class="col">
-                    <p class="lead font-size-1"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>  0960535358</p>
+                    <p class="lead font-size-1"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>  0999999999</p>
                 </div>
             </div>
             <div class="row pl-4">
                 <div class="col">
-                    <p class="lead font-size-1"><i class="fa fa fa-envelope fa-lg" aria-hidden="true"></i>  valledorado.quito@gmail.com</p>
+                    <p class="lead font-size-1"><i class="fa fa fa-envelope fa-lg" aria-hidden="true"></i>  contacto@librerepublic.ec</p>
                 </div>
             </div>
         </div>
