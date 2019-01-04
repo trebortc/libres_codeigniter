@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <div class="row mx-auto">
-                <a class="navbar-brand js-scroll-trigger pr-5" href="#">
+                <a class="navbar-brand js-scroll-trigger pr-5" href="<?php echo base_url();?>">
                     <img src="<?php echo base_url();?>assets/img/logo.PNG" class="img-fluid" alt="Responsive image">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,10 +41,10 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav font-weight-bold">
                         <div class="btn-group pl-4 pr-4">
-                            <a type="button" href="<?php echo base_url();?>" class="btn btn-light tam-letra-1 font-weight-bold">INICIO</a>
+                            <a type="" href="<?php echo base_url();?>" class="btn btn-light tam-letra-1 font-weight-bold">INICIO</a>
                         </div>
                         <div class="btn-group pl-4 pr-4">
-                            <a type="button" href="<?php echo base_url();?>inicio/teayudamos" class="btn btn-light tam-letra-1 font-weight-bold">TE AYUDAMOS</a>
+                            <a type="" href="<?php echo base_url();?>inicio/teayudamos" class="btn btn-light tam-letra-1 font-weight-bold">TE AYUDAMOS</a>
                             <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="btn-group pl-4 pr-4">
-                            <a type="button" href="<?php echo base_url();?>inicio/recursos" class="btn btn-light tam-letra-1 font-weight-bold">RECURSOS</a>
+                            <a type="" href="<?php echo base_url();?>inicio/recursos" class="btn btn-light tam-letra-1 font-weight-bold">RECURSOS</a>
                             <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
@@ -69,10 +69,10 @@
                             </div>
                         </div>
                         <div class="btn-group pl-4 pr-4">
-                            <a type="button" href="<?php echo base_url();?>inicio/blog" class="btn btn-light tam-letra-1 font-weight-bold">BLOG</a>
+                            <a type="" href="<?php echo base_url();?>inicio/blog" class="btn btn-light tam-letra-1 font-weight-bold">BLOG</a>
                         </div>
                         <div class="btn-group pl-4 pr-4">
-                            <a type="button" href="<?php echo base_url();?>inicio/contacto" class="btn btn-light tam-letra-1 font-weight-bold">CONTACTO</a>
+                            <a type="" href="<?php echo base_url();?>inicio/contacto" class="btn btn-light tam-letra-1 font-weight-bold">CONTACTO</a>
                         </div>
                     </ul>
                 </div>
