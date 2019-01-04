@@ -178,6 +178,78 @@ class Inicio extends CI_Controller {
 		$this->load->view('template/piedepagina');			
 	}
 
+	public function recursos()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/recursos');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+	public function libroguia()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/libroguia');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+	public function herramientasdidacticas()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/herramientasdidacticas');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+	public function herramientasaudiovisuales()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/herramientasaudiovisuales');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+	public function estudios()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/estudios');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
+
+
+
 	
 
 }
