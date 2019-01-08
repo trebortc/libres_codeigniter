@@ -18,17 +18,17 @@
             <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css">
             <link href="<?php echo base_url();?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
             <link href="<?php echo base_url();?>assets/css/hover.css" rel="stylesheet" type="text/css">
-            <link rel="icon" type="image/x-icon" href="<?php echo base_url()?>assets/econ.ico" />
+            <link rel="icon" type="image/x-icon" href="<?php echo base_url()?>assets/libres.ico" />
         <!-- FinStyles -->
     </head>
     <body>
         <!-- Navegación -->
-        <ul class="nav nav-tabs bg-dark flex-row fixed-top p-4">
+        <ul class="nav nav-tabs bg-light flex-row fixed-top p-4">
             <li class="nav-item active">
                 <h5 class="">
                     <a class="" href="<?php echo base_url();?>Inicio/">
                         <?php 
-                            echo "<img src='".base_url()."/assets/img/econ_b.svg' alt='financiamiento' class='pr-3n'>";
+                            echo "<img src='".base_url()."/assets/img/logo.png' alt='financiamiento' class='pr-3n'>";
                         ?>
                     </a>
                 </h5>
@@ -36,13 +36,13 @@
             </li>
                 
             <li class="nav-item">
-                <a class="p-4 nav-link text-white font-weight-bold" href="<?php echo base_url();?>Banner/">Banner</a>
+                <a class="p-4 nav-link  font-weight-bold" href="<?php echo base_url();?>Banner/">Banner</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link text-white font-weight-bold" href="<?php echo base_url();?>Proyectos/">Proyectos</a>
+                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Proyectos/">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link text-white font-weight-bold" href="<?php echo base_url();?>Noticias/">Noticias</a>
+                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Noticias/">Blog</a>
             </li>
         </ul>
         <!-- FinNavegacion -->

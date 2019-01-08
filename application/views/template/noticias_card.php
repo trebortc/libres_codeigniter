@@ -11,9 +11,9 @@
                         echo "<div class='col'>".
                             "<div class='card borde-card-peq color-1'>".
                                 "<div class='card-body'>".
-                                    "<h5 class='card-title text-white'>LOREM IPSUM</h5>".
-                                    "<p class='card-text text-white lead text-justify'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis </p>".
-                                    "<a href='#' class='btn btn-danger float-right pl-4 pr-4 font-weight-bold'>LEER MÁS</a>".
+                                    "<h5 class='card-title text-white'>".$noticia->titulo."</h5>".
+                                    "<p class='card-text text-white lead text-justify'>".$noticia->descripcion."</p>".
+                                    "<a class='btn btn-danger float-right pl-4 pr-4 font-weight-bold' href='".base_url()."noticias/ver/".$noticia->id."' class='btn btn-primary'>LEER MÁS</a>".
                                 "</div>".
                             "</div>".
                         "</div>";

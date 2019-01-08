@@ -80,12 +80,12 @@ class Inicio extends CI_Controller {
 		$this->load->view('template/piedepagina');
 	}
 
-	public function noticias()
+	public function blog()
 	{
 		$this->load->model('NoticiasModel');
 		$noticias = $this->NoticiasModel->getNoticias();
 		$this->load->view('template/cabecera');
-		$this->load->view('template/noticias',compact('noticias'));
+		$this->load->view('template/blog',compact('noticias'));
 		$this->load->view('template/piedepagina');
 	}
 
@@ -110,7 +110,7 @@ class Inicio extends CI_Controller {
         {   
 			$usuario = $this->input->post('usuario');
 			$password = $this->input->post('password');
-			if($usuario == "admin_econ" && $password == "adminECON"){
+			if($usuario == "admin_libres" && $password == "adminLibres"){
 				$this->admin();
 			}
 			else{
@@ -248,6 +248,19 @@ class Inicio extends CI_Controller {
 		$this->load->view('template/piedepagina');			
 	}
 
+	public function asesoriaeducativaylegal()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/asesoriaeducativaylegal');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	}
 
 
 	

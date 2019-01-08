@@ -12,7 +12,7 @@
                                 "<li class='list-inline-item'><h5>Publicado: </h5></li>".
                                 "<li class='list-inline-item'><h6>".$noticia->fecha."</h6></li>".
                                 "<li class='list-inline-item'><h5>Editor: </h5></li>".
-                                "<li class='list-inline-item'><h6>ECON-ADMIN</h6></li>".
+                                "<li class='list-inline-item'><h6>LIBRES-ADMIN</h6></li>".
                             "</ul>".
                         "</div>".
                         "<img class='card-img-top' src='".base_url()."uploads/".$noticia->imagen1."' alt='imagen noticia'>".

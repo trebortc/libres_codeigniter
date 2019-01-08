@@ -8,7 +8,7 @@
                     "<img class='img-fluid' src='".base_url()."uploads/".$noticia['imagen2']."' alt='Primera Imagen'>".
                 "</div>".
                     "<hr>".
-                        "<h4><span class='badge badge-secondary'>".$noticia['fecha']."</span>  <span class='badge badge-secondary'>ECON</span></h4>".
+                        "<h4><span class='badge badge-secondary'>".$noticia['fecha']."</span>  <span class='badge badge-secondary'>LIBRES</span></h4>".
                     "<hr> ".
                         "<p class='text-justify'>".$noticia['texto']."</p>".
                     "<hr>";

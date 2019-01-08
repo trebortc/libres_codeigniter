@@ -9,6 +9,7 @@
             </div>
         </div>
     </div>
+    <br><br><br><br>
     <div class="row text-right">
         <div class="col-11">
             <a href="<?php echo base_url();?>noticias/nuevo" class="btn btn-info" role="button">Nuevo</a>
@@ -16,7 +17,7 @@
     </div>
     <div class="row">
         <div class="col p-3">
-            <h1><span class='badge badge-dark'>Noticias</span></h1>
+            <h1><span class='badge badge-dark'>BLOG</span></h1>
             <div class="table-responsive table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
                 <table class="table table-hover table-sm">
                     <thead class="thead-light">
