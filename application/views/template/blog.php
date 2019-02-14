@@ -3,11 +3,10 @@
     <?php
         foreach($noticias as $noticia)
         {
-            echo "<div class='row p-4'>".
+            echo "<div class='row p-5'>".
                 "<div class='col'>".
                     "<div class='card'>".
                         "<div class='card-header'>".
-                            "<hr>".
                             "<ul class='list-inline'>".
                                 "<li class='list-inline-item'><h5>Publicado: </h5></li>".
                                 "<li class='list-inline-item'><h6>".$noticia->fecha."</h6></li>".

@@ -177,6 +177,20 @@ class Inicio extends CI_Controller {
 		$this->load->view('template/footer',compact('proyectos','noticias'));
 		$this->load->view('template/piedepagina');			
 	}
+	
+	public function organizacionesdeapoyo()
+	{
+		$this->load->model('NoticiasModel');
+		$this->load->model('ProyectosModel');
+		
+		$noticias = $this->NoticiasModel->getNoticias();
+		$proyectos = $this->ProyectosModel->getProyectos();
+
+		$this->load->view('template/cabecera');
+		$this->load->view('template/organizacionesdeapoyo');
+		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/piedepagina');			
+	} 
 
 	public function recursos()
 	{
@@ -215,7 +229,7 @@ class Inicio extends CI_Controller {
 		$proyectos = $this->ProyectosModel->getProyectos();
 
 		$this->load->view('template/cabecera');
-		$this->load->view('template/herramientasdidacticas');
+		$this->load->view('template/herramientasdidacticas',compact('proyectos'));
 		$this->load->view('template/footer',compact('proyectos','noticias'));
 		$this->load->view('template/piedepagina');			
 	}

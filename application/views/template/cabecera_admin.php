@@ -28,7 +28,7 @@
                 <h5 class="">
                     <a class="" href="<?php echo base_url();?>Inicio/">
                         <?php 
-                            echo "<img src='".base_url()."/assets/img/logo.png' alt='financiamiento' class='pr-3n'>";
+                            echo "<img src='".base_url()."/assets/img/libres_peq.png' alt='Logo libres' class='pr-3n' width='200'>";
                         ?>
                     </a>
                 </h5>
@@ -39,10 +39,13 @@
                 <a class="p-4 nav-link  font-weight-bold" href="<?php echo base_url();?>Banner/">Banner</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Proyectos/">Proyectos</a>
+                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Libros/">Libros</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Noticias/">Blog</a>
+                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Blog/">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Contacto/">Contacto</a>
             </li>
         </ul>
         <!-- FinNavegacion -->

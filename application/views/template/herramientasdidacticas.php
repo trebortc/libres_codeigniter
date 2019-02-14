@@ -1,58 +1,36 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-            <div class="jumbotron">
-                <h1 class="display-4">Herramientas Didácticas</h1><br>
-                <p class="lead text-justify">A lo largo del mundo se han desarrollado guías, manuales e instructivos de trabajo con niños, niñas y adolescentes de diversidad sexo-genérica en entornos educativos, así como prevenir el bullying por orientación sexual y/o identidad de género. En estos documentos encontrarán recomendaciones prácticas.  Recuerden además que pueden solicitar talleres de sensibilización al equipo responsable de esta página.  </p>
-                <hr class="my-4">
-                <h3 class="text-center">Documentos PDF para educadores</h2>
+        <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-9">
+            <div class="jumbotron" style="background:transparent !important">
+                <h1 class="tam-letra-3 font-weight-bold">Herramientas Didácticas</h1><br>
+                <p class="lead text-justify tam-letra-0">A lo largo del mundo se han desarrollado guías, manuales e instructivos de trabajo con niños, niñas y adolescentes de diversidad sexo-genérica en entornos educativos, así como prevenir el bullying por orientación sexual y/o identidad de género. En estos documentos encontrarán recomendaciones prácticas.  Recuerden además que pueden solicitar talleres de sensibilización al equipo responsable de esta página.  </p>
+                <hr class="my-4"><br>
+                <h1 class="tam-letra-3 font-weight-bold text-center">Documentos PDF para educadores</h2>
             </div>
         </div>
     </div>
-    <div class = "row justify-content-center">
-        <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-            <ul class="list-group">
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://unesdoc.unesco.org/images/0024/002448/244841S.pdf">http://unesdoc.unesco.org/images/0024/002448/244841S.pdf</a> 
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://www.inmujer.gob.es/publicacioneselectronicas/documentacion/Documentos/DE1711.pdf">http://www.inmujer.gob.es/publicacioneselectronicas/documentacion/Documentos/DE1711.pdf</a>
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://educacionlgbti.org/wp-content/uploads/2016/12/SumandoLibertades_Dic16.pdf">http://educacionlgbti.org/wp-content/uploads/2016/12/SumandoLibertades_Dic16.pdf</a>
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://www.felgtb.com/ciberbullying/materiales/Guia%20Bullying%20homofobico%20Guia%20de%20Actuacion.pdf">http://www.felgtb.com/ciberbullying/materiales/Guia%20Bullying%20homofobico%20Guia%20de%20Actuacion.pdf</a> 
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://www.felgtb.org/rs/391/d112d6ad-54ec-438b-9358-4483f9e98868/987/filename/el-amor-y-el-sexo-no-son-de-un-solo-color.pdf">http://www.felgtb.org/rs/391/d112d6ad-54ec-438b-9358-4483f9e98868/987/filename/el-amor-y-el-sexo-no-son-de-un-solo-color.pdf</a> 
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://www.educatolerancia.com/wp-content/uploads/2016/12/Guia-Homofobia-Escuela.pdf">http://www.educatolerancia.com/wp-content/uploads/2016/12/Guia-Homofobia-Escuela.pdf</a>
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://ceip.edu.uy/IFS/documentos/2015/sexual/materiales/Aula_PLURAL.pdf">http://ceip.edu.uy/IFS/documentos/2015/sexual/materiales/Aula_PLURAL.pdf</a> 
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://www.familiasporladiversidad.es/files/objetos/BULLYINGprofesores.pdf">http://www.familiasporladiversidad.es/files/objetos/BULLYINGprofesores.pdf</a> 
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://www.familiasporladiversidad.es/files/objetos/BULLYINGprofesores.pdf">http://www.familiasporladiversidad.es/files/objetos/BULLYINGprofesores.pdf</a> 
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-                <li class="list-group-item btn-light d-flex justify-content-between align-items-center">
-                    <a href="http://salutsexual.sidastudi.org/es/zonapedagogica-grupos/documentos-tematicos/zonapedagogica-grupo/150527-bullying-homof-b">http://salutsexual.sidastudi.org/es/zonapedagogica-grupos/documentos-tematicos/zonapedagogica-grupo/150527-bullying-homof-b</a> 
-                    <span class="far fa-file-alt" style="color:#6495ED"></span>
-                </li>
-            </ul>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class='col-12 col-sm-12 col-md-12 col-lg-11 col-xl-11'>
+            <div class='row justify-content-center'>
+                <?php
+                    foreach ($proyectos as $proyecto) 
+                    {               
+                        echo "<div class='col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5'>".
+                                    "<div class='card' style='width: 30rem'>". 
+                                        "<img class='card-img-top' src='".base_url()."uploads/".$proyecto->imagen1."' alt='Imagen libro'>".
+                                        "<div class='color-1 borde-ancho'></div>".
+                                        "<div class='card-body'>".
+                                            "<h1 class='card-title font-weight-bold tam-letra-3'>".$proyecto->titulo."</h1>".
+                                            "<p class='card-text text-justify tam-letra-0'>".$proyecto->descripcion."...</p>".
+                                            "<a href='".$proyecto->precio."' class='btn btn-dark float-right mr-4' target='_blank'>LEER MÁS</a>".
+                                        "</div>".
+                                    "</div>".
+                            "</div>";
+                    }
+                ?>
+            </div>
         </div>
     </div>
 </div>

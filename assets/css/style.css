@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.carousel-caption {
+    left: 5%;
+    text-align: left;
+    background-color: rgba(0,0,0,.125);
+    max-width: 1000px;
+    right: auto;
+    padding:5px;
+}
 .esp-bloq-1 {
-    height: 3rem;
+    height: 1rem;
+}
+
+.esp-bloq-0 {
+    height: .5rem;
 }
 
 .color-1{
@@ -14,6 +31,10 @@
     background-color: rgb(239, 239, 239);
 }
 
+.color-4{
+    background-color: rgb(89, 88, 89);
+}
+
 h1.color-2{
     color: rgb(255, 255, 255);
 }
@@ -21,14 +42,11 @@ h1.color-2{
 .btn-primary{
     border-color: transparent;
     border: 0px solid transparent;
-    background: rgba(255,0,0,1);
-    background: -moz-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(232,77,5,1) 17%, rgba(245,245,59,1) 32%, rgba(68,176,102,1) 51%, rgba(59,164,245,1) 74%, rgba(60,30,125,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(17%, rgba(232,77,5,1)), color-stop(32%, rgba(245,245,59,1)), color-stop(51%, rgba(68,176,102,1)), color-stop(74%, rgba(59,164,245,1)), color-stop(100%, rgba(60,30,125,1)));
-    background: -webkit-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(232,77,5,1) 17%, rgba(245,245,59,1) 32%, rgba(68,176,102,1) 51%, rgba(59,164,245,1) 74%, rgba(60,30,125,1) 100%);
-    background: -o-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(232,77,5,1) 17%, rgba(245,245,59,1) 32%, rgba(68,176,102,1) 51%, rgba(59,164,245,1) 74%, rgba(60,30,125,1) 100%);
-    background: -ms-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(232,77,5,1) 17%, rgba(245,245,59,1) 32%, rgba(68,176,102,1) 51%, rgba(59,164,245,1) 74%, rgba(60,30,125,1) 100%);
-    background: linear-gradient(to right, rgba(255,0,0,1) 0%, rgba(232,77,5,1) 17%, rgba(245,245,59,1) 32%, rgba(68,176,102,1) 51%, rgba(59,164,245,1) 74%, rgba(60,30,125,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#3c1e7d', GradientType=1 );
+    background: #ed2f2f; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ed2f2f 10%, #ddd42a 26%, #d5ed25 38%, #71f200 52%, #0a87db 67%, #1c78c9 80%, #5802c9 92%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ed2f2f 10%,#ddd42a 26%,#d5ed25 38%,#71f200 52%,#0a87db 67%,#1c78c9 80%,#5802c9 92%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ed2f2f 10%,#ddd42a 26%,#d5ed25 38%,#71f200 52%,#0a87db 67%,#1c78c9 80%,#5802c9 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2f2f', endColorstr='#5802c9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .color-ar{
@@ -44,12 +62,13 @@ h1.color-2{
 
 .btn-dark{
     color: white;
-    background-color: rgb(29, 29, 27);
+    background-color: rgb(72, 23, 151);
     border-radius: .50rem;   
 }
 
 .btn-secondary{
-    border-radius: 1.25rem;
+    /*border-radius: 1.25rem;*/
+    /*background: rgb(94, 82, 100);*/
 }
 
 .borde-imagen{
@@ -77,30 +96,33 @@ h1.color-2{
 	width:100vw;
 }
 
-#carouselExampleControls11
-{
-    margin-top: -40px;
-}
-
-#navbar1
-{
-    position:fixed;
-    width:100%;
-    background-color:rgba(255, 255, 255, 0);
-    z-index:10;
-    border-radius:0;
-    border-color:none;
-    color: white;
-}
-
 .btn-light{
-    background: white;
+    /*background: white;*/
+    background: rgba(255, 255, 255, 0.1);
     border: 0px solid transparent;
 }
 
+.btn-group{
+    /*border-left-width: 1px;
+    border-left-color: black;
+    border-left: solid;*/
+}
+
+.card-header{
+    background-color: rgb(255, 255, 255);
+}
+
+/*.bg-light{
+    background: #ed2f2f;
+    background: -moz-linear-gradient(-45deg, #ed2f2f 10%, #ddd42a 26%, #d5ed25 38%, #71f200 52%, #0a87db 67%, #1c78c9 80%, #5802c9 92%); 
+    background: -webkit-linear-gradient(-45deg, #ed2f2f 10%,#ddd42a 26%,#d5ed25 38%,#71f200 52%,#0a87db 67%,#1c78c9 80%,#5802c9 92%); 
+    background: linear-gradient(135deg, #ed2f2f 10%,#ddd42a 26%,#d5ed25 38%,#71f200 52%,#0a87db 67%,#1c78c9 80%,#5802c9 92%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2f2f', endColorstr='#5802c9',GradientType=1 );
+}*/
+
 @media (max-width: 575.98px) { 
     .tam-letra-1{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     h1.tam-letra-3{
@@ -177,7 +199,7 @@ h1.color-2{
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .tam-letra-1{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     h1.tam-letra-3{
@@ -225,7 +247,7 @@ h1.color-2{
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .tam-letra-1{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     h1.tam-letra-3{
@@ -273,7 +295,7 @@ h1.color-2{
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     .tam-letra-1{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     h1.tam-letra-3{
@@ -321,20 +343,38 @@ h1.color-2{
 
 @media (min-width: 1200px) { 
     .tam-letra-1{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     h1.tam-letra-1{
         font-size: 2.75rem;
     }
 
+    h1.tam-letra-2{
+        font-size: 2.6rem;
+    }
+    
+    h1.tam-letra-11{
+        font-size: 1.5rem;
+    }
+
+
     h1.tam-letra-3{
-        font-size: 3rem;
+        font-size: 1.75rem;
+    }
+
+    /* CAROUSEL*/
+    h1.tam-letra-4{
+        font-size: 6rem;
+    }
+
+    p.tam-letra-c{
+        font-size: 4rem;
     }
     
     .btn-group-lg>.btn, .btn-lg{
-        padding: 0.50rem 3rem 0.50rem;
-        font-size: 2rem;
+        padding: 0.4rem 3rem 0.4rem;
+        font-size: 1.5rem;
         border-radius: 0.75rem;   
     }
 
@@ -343,15 +383,7 @@ h1.color-2{
         background-color: rgb(29, 29, 27);
         border-radius: .50rem;
         border: 0px;
-        background: rgba(247,238,57,1);
-        background: -moz-linear-gradient(45deg, rgba(247,238,57,1) 0%, rgba(241,111,92,1) 43%, rgba(246,41,12,1) 66%, rgba(92,24,240,1) 88%, rgba(39,55,230,1) 100%);
-        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(247,238,57,1)), color-stop(43%, rgba(241,111,92,1)), color-stop(66%, rgba(246,41,12,1)), color-stop(88%, rgba(92,24,240,1)), color-stop(100%, rgba(39,55,230,1)));
-        background: -webkit-linear-gradient(45deg, rgba(247,238,57,1) 0%, rgba(241,111,92,1) 43%, rgba(246,41,12,1) 66%, rgba(92,24,240,1) 88%, rgba(39,55,230,1) 100%);
-        background: -o-linear-gradient(45deg, rgba(247,238,57,1) 0%, rgba(241,111,92,1) 43%, rgba(246,41,12,1) 66%, rgba(92,24,240,1) 88%, rgba(39,55,230,1) 100%);
-        background: -ms-linear-gradient(45deg, rgba(247,238,57,1) 0%, rgba(241,111,92,1) 43%, rgba(246,41,12,1) 66%, rgba(92,24,240,1) 88%, rgba(39,55,230,1) 100%);
-        background: linear-gradient(45deg, rgba(247,238,57,1) 0%, rgba(241,111,92,1) 43%, rgba(246,41,12,1) 66%, rgba(92,24,240,1) 88%, rgba(39,55,230,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ee39', endColorstr='#2737e6', GradientType=1 );
-        font-size: 1.25rem;
+        border-color: transparent;
     }
 
     h5.tam-letra-2{
@@ -383,5 +415,9 @@ h1.color-2{
 
     h1.tam-letra-21{
         font-size: 2rem;
+    }
+
+    p.tam-letra-0{
+        font-size: 1.2rem;
     }
 }

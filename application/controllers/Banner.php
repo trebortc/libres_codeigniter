@@ -39,8 +39,6 @@ class Banner extends CI_Controller
     {
         $this->form_validation->set_rules('titulo','Titulo','required');
         $this->form_validation->set_rules('descripcion','Descripcion','required');
-        $this->form_validation->set_rules('precio','Precio','required');
-        $this->form_validation->set_rules('texto','Texto','required');
         
         if($this->form_validation->run() == TRUE)
         {            
@@ -52,9 +50,7 @@ class Banner extends CI_Controller
                 }else{
                     $titulo = $this->input->post('titulo');
                     $descripcion = $this->input->post('descripcion');
-                    $texto = $this->input->post('texto');
-                    $precio = $this->input->post('precio');
-                    $this->BannerModel->guardar($titulo, $descripcion, $texto, $precio, $imagen1);
+                    $this->BannerModel->guardar($titulo, $descripcion, "", "", $imagen1);
                     $this->index("Dato creado con exito");            
                 }
             }catch(Exception $e){
@@ -88,16 +84,12 @@ class Banner extends CI_Controller
     {
         $this->form_validation->set_rules('titulo','Titulo','required');
         $this->form_validation->set_rules('descripcion','Descripcion','required');
-        $this->form_validation->set_rules('precio','Precio','required');
-        $this->form_validation->set_rules('texto','Texto','required');
         
         if($this->form_validation->run() == TRUE)
         {            
             $titulo = $this->input->post('titulo');
             $descripcion = $this->input->post('descripcion');
-            $texto = $this->input->post('texto');
-            $precio = $this->input->post('precio');
-            $this->BannerModel->actualizar($id,$titulo, $descripcion, $texto, $precio);
+            $this->BannerModel->actualizar($id,$titulo, $descripcion, "", "");
             $this->index("Dato creado con exito"); 
 
         }else{
