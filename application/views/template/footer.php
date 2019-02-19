@@ -13,20 +13,22 @@
                 <div class="col-3">
                     <h4 class="font-weight-bold pt-3">NUESTRAS <br> REDES SOCIALES</h4>
                     <div class="row p-4 justify-content-center">
-                        <i class="fab fa-facebook fa-4x p-3" aria-hidden="true"></i>
-                        <i class="fab fa-twitter fa-4x p-3" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/libresnomassilencio" target="_blank"><i class="fab fa-facebook fa-4x p-3" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/REPsiD_LGBTI" target="_blank"><i class="fab fa-twitter fa-4x p-3" aria-hidden="true"></i></a>
                         <i class="fab fa-instagram fa-4x p-3" aria-hidden="true"></i>       
                     </div>
                 </div>
                 <div class="col-3">
                     <h4 class="font-weight-bold pt-3">CONTÁCTO</h4>
                     <h5 class="font-weight-bold">Dirección:</h5>
-                    <h5 class="tam-letra-2">Gaspar de Villarroel, y 6 de Diciembre</h5>
+                    <h5 class="tam-letra-2">Universidad de Las Américas - Ecuador</h5>
+                    <h5 class="tam-letra-2">Av. Campus Udlapark: Subsuelo 4</h5>
                     <h5 class="font-weight-bold">Email:</h5>
-                    <h5 class="tam-letra-2">contacto@librerepublic.ec</h5>
+                    <h5 class="tam-letra-2"></h5>
                     <h5 class="font-weight-bold">Teléfono</h5>
-                    <h5 class="tam-letra-2">59392 2222 2222</h5>
-                    <h5 class="tam-letra-2">59392 2222 2222</h5>
+                    <h5 class="tam-letra-2">+593(2)3981000 Ext.:7513</h5>
+                    <h5 class="font-weight-bold">Móvil</h5>
+                    <h5 class="tam-letra-2">0984580875</h5>
                 </div>
             </div>        
         </div>

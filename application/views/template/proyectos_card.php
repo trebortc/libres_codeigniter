@@ -49,7 +49,7 @@
                 </div>
                 <div class="col col-sm-7 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center">
                     <p class="lead text-justify pl-4 pr-4 text-white"> 
-                    En Ecuador se reporta que casi el 60% de los estudiantes entre 11 y 18 años en el territorio nacional reportan haber sido víctimas de un acto violento en la escuela. Es decir 3 de cada 5 estudiantes han vivido violencia en sus unidades educativas. 
+                    UNESCO reconoce al bullying como la principal causa de exclusion escolar y hace una llamada a que se intervenga en la temática. Ser LGBTI aumenta hasta 8 veces más el riesgo de ser víctima de bullying. ES URGENTE ACTUAR                    
                     </p>
                 </div>
                 <div class="col col-sm-9 col-md-9 col-lg-4 col-xl-4 text-center">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col col-sm-7 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center">
                     <p class="lead text-justify pl-4 pr-4 text-white"> 
-                    En Ecuador se reporta que casi el 60% de los estudiantes entre 11 y 18 años en el territorio nacional reportan haber sido víctimas de un acto violento en la escuela. Es decir 3 de cada 5 estudiantes han vivido violencia en sus unidades educativas. 
+                    UNESCO reconoce al bullying como la principal causa de exclusion escolar y hace una llamada a que se intervenga en la temática. Ser LGBTI aumenta hasta 8 veces más el riesgo de ser víctima de bullying. ES URGENTE ACTUAR                    
                     </p>
                 </div>
                 <div class="col col-sm-9 col-md-9 col-lg-4 col-xl-4 text-center">

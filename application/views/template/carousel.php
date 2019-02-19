@@ -58,7 +58,7 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-12 col-sm-10 col-md-10 col-lg-6 col-xl-6 text-center">
-            <a href="<?php echo base_url();?>inicio/contacto" class="btn btn-primary btn-lg font-weight-bold" role="button">NOSOTROS <br> TE AYUDAMOS</a>
+            <a href="<?php echo base_url();?>inicio/contacto" class="btn btn-primary btn-lg font-weight-bold" role="button">PODEMOS <br> APOYARTE</a>
         </div>
     </div>
     <div class="row justify-content-center">
@@ -73,7 +73,7 @@
         <div class="col-9">
             <div class="row">
                 <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 d-flex align-items-end">
-                    <h1 class="tam-letra-2">Entérate de<br><strong>NUESTROS ESTUDIOS</strong> </h1>
+                    <h1 class="tam-letra-2">Encuentra<br><strong>MÁS RECURSOS</strong> </h1>
                 </div>
                 <div class="col-12 col-sm-7 col-md-5 col-lg-5 col-xl-5 d-flex align-items-center">
                     <div class="text-center">
