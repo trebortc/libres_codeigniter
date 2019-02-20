@@ -6,6 +6,7 @@
                     <h1 class="display-1 font-weight-bold text-white">BLOG</h1>
                 </div>
                 <?php
+                    $i=0;
                     foreach($noticias as $noticia)
                     {
                         echo "<div class='col'>".
@@ -17,6 +18,10 @@
                                 "</div>".
                             "</div>".
                         "</div>";
+
+                        if($i++==1){
+                            break;
+                        }
                     }
                 ?>
             </div>

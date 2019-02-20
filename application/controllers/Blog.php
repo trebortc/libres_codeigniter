@@ -55,8 +55,8 @@ class Blog extends CI_Controller
         {   
             try{
                 $imagen1 = $this->ImagenModel->cargarImagenServidor('imagen1');
-                $imagen2 = $this->ImagenModel->cargarImagenServidor('imagen2');
-                if(is_null($imagen1) && is_null($imagen2))
+                //$imagen2 = $this->ImagenModel->cargarImagenServidor('imagen2');
+                if(is_null($imagen1))
                 {
                     $this->index("Error al cargar imagenes");    
                 }else{
@@ -64,7 +64,7 @@ class Blog extends CI_Controller
                     $descripcion = $this->input->post('descripcion');
                     $texto = $this->input->post('texto');
                     $fecha = $this->input->post('fecha');
-                    $this->NoticiasModel->guardar($titulo, $descripcion, $texto, $fecha, $imagen1, $imagen2);
+                    $this->NoticiasModel->guardar($titulo, $descripcion, $texto, $fecha, $imagen1,$imagen1);
                     $this->index("Dato creado con exito");   
                 }
             }catch(Exception $e){

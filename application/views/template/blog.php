@@ -18,7 +18,7 @@
                         "<div class='card-body'>".
                             "<h5 class='card-title'>".$noticia->titulo."</h5>".
                             "<p class='card-text'>".$noticia->descripcion."</p>".
-                            "<a href='".base_url()."noticias/ver/".$noticia->id."' class='btn btn-primary'>Leer más</a>".
+                            "<a href='".base_url()."blog/ver/".$noticia->id."' class='btn btn-primary'>Leer más</a>".
                         "</div>".
                     "</div>".
                 "</div>".
