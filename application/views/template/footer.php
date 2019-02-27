@@ -42,4 +42,9 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col p-0">
+            <a class="float-right text-white p-0" style='font-size: .4rem;' href="<?php echo base_url();?>inicio/login">Ingresar</a>
+        </div>
+    </div>
 </div>

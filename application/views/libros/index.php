@@ -12,7 +12,11 @@
     <br><br><br><br>
     <div class="row text-right">
         <div class="col-11">
-            <a href="<?php echo base_url();?>Libros/nuevo" class="btn btn-info" role="button">Nuevo</a>
+            <?php
+                if(isset ($_SESSION ['usuario' ])){
+                    echo "<a href='".base_url()."Libros/nuevo' class='btn btn-info' role='button'>Nuevo</a>";
+                }
+            ?>
         </div>
     </div>
     <div class="row">
@@ -42,10 +46,12 @@
                                 "<td>".$proyecto->descripcion."</td>".
                                 "<td>".$proyecto->precio."</td>".
                                 "<td>".$proyecto->tipo."</td>".
-                                "<td>". 
-                                    "<a href='".base_url()."Libros/editar/".$proyecto->id."'>Editar</a>".
-                                    "<a href='".base_url()."Libros/eliminar/".$proyecto->id."'>Eliminar</a>".
-                                "</td>".
+                                "<td>";
+                                    if(isset ($_SESSION ['usuario' ])){ 
+                                        echo "<a href='".base_url()."Libros/editar/".$proyecto->id."'>Editar</a>";
+                                        echo "<a href='".base_url()."Libros/eliminar/".$proyecto->id."'>Eliminar</a>";
+                                    }
+                                echo "</td>".
                                 "</tr>";    
                             }
                         ?>

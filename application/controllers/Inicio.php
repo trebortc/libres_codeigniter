@@ -20,6 +20,7 @@ class Inicio extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->library('session');
 		$this->load->model('BannerModel');
 		$this->load->model('NoticiasModel');
 		$this->load->model('ProyectosModel');
@@ -111,6 +112,10 @@ class Inicio extends CI_Controller {
 			$usuario = $this->input->post('usuario');
 			$password = $this->input->post('password');
 			if($usuario == "admin_libres" && $password == "adminLibres"){
+				$datos  =  array ( 
+					'usuario'   =>  $usuario
+				);
+				$this->session->set_userdata ( $datos );
 				$this->admin();
 			}
 			else{
@@ -276,6 +281,11 @@ class Inicio extends CI_Controller {
 		$this->load->view('template/piedepagina');			
 	}
 
+	public function cerrar()
+	{
+		unset ($_SESSION['usuario']);
+		$this->index();
+	}
 
 	
 

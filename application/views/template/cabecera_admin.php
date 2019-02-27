@@ -23,31 +23,46 @@
     </head>
     <body>
         <!-- Navegación -->
-        <ul class="nav nav-tabs bg-light flex-row fixed-top p-4">
-            <li class="nav-item active">
-                <h5 class="">
-                    <a class="" href="<?php echo base_url();?>Inicio/">
-                        <?php 
-                            echo "<img src='".base_url()."/assets/img/libres_peq.png' alt='Logo libres' class='pr-3n' width='200'>";
-                        ?>
-                    </a>
-                </h5>
-                
-            </li>
-                
-            <li class="nav-item">
-                <a class="p-4 nav-link  font-weight-bold" href="<?php echo base_url();?>Banner/">Banner</a>
-            </li>
-            <li class="nav-item">
-                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Libros/">Libros</a>
-            </li>
-            <li class="nav-item">
-                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Blog/">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="p-4 nav-link font-weight-bold" href="<?php echo base_url();?>Contacto/">Contacto</a>
-            </li>
-        </ul>
+        <?php
+            if(isset ($_SESSION ['usuario' ])){
+                echo "<ul class='nav nav-tabs bg-light flex-row fixed-top p-4'>".
+                "<li class='nav-item active'>".
+                    "<h5 class=''>".
+                        "<a class='' href='".base_url()."Inicio/'>";
+                                echo "<img src='".base_url()."/assets/img/libres_peq.png' alt='Logo libres' class='pr-3n' width='200'>";
+                        echo "</a>".
+                    "</h5>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link  font-weight-bold' href='".base_url()."Banner/'>Banner</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Libros/'>Libros</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Blog/'>Blog</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Contacto/'>Contacto</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Inicio/cerrar'>Cerrar</a>".
+                "</li>".
+                "</ul>"; 
+            }else{
+                echo "<!DOCTYPE html>".
+                "<html>".
+                "<head>".
+                    "<title>403 Forbidden</title>".
+                "</head>".
+                "<body>".
+                "<p>Directory access is forbidden.</p>".
+                "</body>".
+                "</html>";
+            }
+        ?>
+        
+       
         <!-- FinNavegacion -->
 
         <!-- Contenido -->

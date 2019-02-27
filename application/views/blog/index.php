@@ -12,7 +12,11 @@
     <br><br><br><br>
     <div class="row text-right">
         <div class="col-11">
-            <a href="<?php echo base_url();?>Blog/nuevo" class="btn btn-info" role="button">Nuevo</a>
+            <?php
+                if(isset ($_SESSION ['usuario' ])){
+                    echo "<a href='".base_url()."Blog/nuevo' class='btn btn-info' role='button'>Nuevo</a>";
+                }
+            ?>
         </div>
     </div>
     <div class="row">
@@ -39,10 +43,12 @@
                                 "<td>".$noticia->titulo."</td>".
                                 "<td>".$noticia->descripcion."</td>".
                                 "<td>".$noticia->fecha."</td>".
-                                "<td>". 
-                                    "<a href='".base_url()."Blog/editar/".$noticia->id."'>Editar</a>".
-                                    "<a href='".base_url()."Blog/eliminar/".$noticia->id."'>Eliminar</a>".
-                                "</td>".
+                                "<td>";
+                                if(isset ($_SESSION ['usuario' ])){ 
+                                    echo "<a href='".base_url()."Blog/editar/".$noticia->id."'>Editar</a>";
+                                    echo "<a href='".base_url()."Blog/eliminar/".$noticia->id."'>Eliminar</a>";
+                                }    
+                                echo "</td>".
                                 "</tr>";    
                             }
                         ?>

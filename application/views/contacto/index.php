@@ -38,9 +38,11 @@
                                 "<td>".$contacto->email."</td>".
                                 "<td>".$contacto->telefono."</td>".
                                 "<td>".$contacto->mensaje."</td>".
-                                "<td>". 
-                                    "<a href='".base_url()."Contacto/eliminar/".$contacto->id."'>Eliminar</a>".
-                                "</td>".
+                                "<td>";
+                                if(isset ($_SESSION ['usuario' ])){  
+                                    echo "<a href='".base_url()."Contacto/eliminar/".$contacto->id."'>Eliminar</a>";
+                                }
+                                echo "</td>".
                                 "</tr>";    
                             }
                         ?>
