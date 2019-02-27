@@ -2,7 +2,7 @@
     <div class="row justify-content-center pb-5">
         <div class="col-9">
             <div class="row justify-content-center pt-5">
-                <div class="col-4">
+                <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-4">
                     <img src="<?php echo base_url();?>assets/img/libres_peq.png" alt="" width="200">
                     <div class="texto p-4">
                         <p class="text-justify">
@@ -10,7 +10,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-3">
                     <h4 class="font-weight-bold pt-3">NUESTRAS <br> REDES SOCIALES</h4>
                     <div class="row p-4 justify-content-center">
                         <a href="https://www.facebook.com/libresnomassilencio" target="_blank"><i class="fab fa-facebook fa-4x p-3" aria-hidden="true"></i></a>
@@ -18,7 +18,7 @@
                         <i class="fab fa-instagram fa-4x p-3" aria-hidden="true"></i>       
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-3">
                     <h4 class="font-weight-bold pt-3">CONTÁCTO</h4>
                     <h5 class="font-weight-bold">Dirección:</h5>
                     <h5 class="tam-letra-2">Universidad de Las Américas - Ecuador</h5>

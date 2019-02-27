@@ -17,7 +17,7 @@
                         "<img class='card-img-top' src='".base_url()."uploads/".$noticia->imagen1."' alt='imagen noticia'>".
                         "<div class='card-body'>".
                             "<h5 class='card-title'>".$noticia->titulo."</h5>".
-                            "<p class='card-text'>".$noticia->descripcion."</p>".
+                            "<p class='card-text text-justify'>".$noticia->descripcion."</p>".
                             "<a href='".base_url()."blog/ver/".$noticia->id."' class='btn btn-primary'>Leer más</a>".
                         "</div>".
                     "</div>".

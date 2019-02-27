@@ -163,13 +163,32 @@ h1.color-2{
         font-size: 2rem;
     }
 
+    /* Card */
     .card {
         margin: 0 auto; /* Added */
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
         border: 0px;
-        width: 15rem;
+        width: 12rem;
     }
+    
+    h1.tam-letra-3{
+        font-size: 0.7rem;
+    }
+
+    p.tam-letra-0
+    {
+        font-size: 0.6rem;
+    }
+
+    h4{
+        font-size: 0.8rem;
+    }
+    
+    .lead {
+        font-size: .6rem;
+    }
+    /* */
 
     .border-izq-1{
         border-left: 1px solid black;
@@ -194,6 +213,10 @@ h1.color-2{
 
     .display-4{
         font-size: .9rem;   
+    }
+
+    p{
+        font-size: .8rem;
     }
 }
 
@@ -358,9 +381,13 @@ h1.color-2{
         font-size: 1.5rem;
     }
 
-
+    /*Card */
     h1.tam-letra-3{
         font-size: 1.75rem;
+    }
+
+    p.tam-letra-0{
+        font-size: 1.2rem;
     }
 
     /* CAROUSEL*/
@@ -417,7 +444,4 @@ h1.color-2{
         font-size: 2rem;
     }
 
-    p.tam-letra-0{
-        font-size: 1.2rem;
-    }
 }

@@ -13,44 +13,44 @@
 
 <div class="container-fluid p-5" id="contactos">
     <div class="row justify-content-center">
-        <div class="col-9">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
             <div class="row pt-3 pl-5 pb-3 justify-content-center" style='background-color: rgb(103, 69, 122);' >
-                <div class="col-6">
+                <div class="col-12 col-sm-10 col-lg-6 col-xl-6">
                     <center>
                         <?php 
-                            echo "<img src='".base_url()."/assets/img/libres_peqb.png' alt='financiamiento' class='pr-3' width='200'>";
+                            echo "<img src='".base_url()."/assets/img/libres_peqb.png' alt='financiamiento' class='pr-3 img-fluid' width='200'>";
                         ?>
                     </center>
                 </div>
             </div>
             <div class="row pt-5 pl-5 pr-5 justify-content-center" style='background-color: rgb(103, 69, 122);'>
-                <div class="col-md-5 col-sm-11">
+                <div class="col-12 col-sm-12 col-md-10 col-lg-12 col-xl-12">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-12 col-md-10 col-lg-12 col-xl-12">
                             <form method="post" action="<?php echo base_url();?>contacto/guardar">
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre:">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido:">
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <input type="text" class="form-control" name="email" id="email" placeholder="Email:">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono:">
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="col">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <textarea class="form-control" rows="6" name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                        <div class="col pt-5 pb-5">
+                                        <div class="col-12 col-sm-12 col-md-10 col-lg-12 col-xl-12 pt-5 pb-5">
                                             <button class="btn" type="submit">Enviar</button>
                                         </div>
                                     </div>
