@@ -61,7 +61,7 @@
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
                                 <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="<?php echo base_url();?>inicio/libroguia">LIBRO GUIA</a>
+                                        <a class="dropdown-item" href="<?php echo base_url();?>inicio/librotestimonial">LIBRO TESTIMONIAL</a>
                                         <a class="dropdown-item" href="<?php echo base_url();?>inicio/herramientasdidacticas">HERRAMIENTAS DIDÁCTICAS</a>
                                         <a class="dropdown-item" href="<?php echo base_url();?>inicio/herramientasaudiovisuales">HERRAMIENTAS AUDIOVISUALES</a>
                                         <a class="dropdown-item" href="<?php echo base_url();?>inicio/estudios">ESTUDIOS</a>

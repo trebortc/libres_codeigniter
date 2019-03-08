@@ -41,6 +41,50 @@ CREATE TABLE `banner` (
   `precio` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE `contacto` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `direccion1` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `direccion2` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `telefono` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `movil` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fax` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `testimonial` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `titulo` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `descripcion` varchar(290) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `url` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `texto` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tipo` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fecha` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `imagen1` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `audiovisuales` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `url` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `estudios` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `tema` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fecha` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `organizaciones` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `descripcion` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+
+
 --
 -- Volcado de datos para la tabla `banner`
 --

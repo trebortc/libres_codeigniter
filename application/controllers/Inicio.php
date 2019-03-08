@@ -25,15 +25,21 @@ class Inicio extends CI_Controller {
 		$this->load->model('NoticiasModel');
 		$this->load->model('ProyectosModel');
 		
+
+		
 		$banners = $this->BannerModel->getBanners();
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
+		
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
 		
 		$this->load->view('template/cabecera');
 		$this->load->view('template/carousel',compact('banners'));
 		$this->load->view('template/proyectos_card',compact('proyectos'));
 		$this->load->view('template/noticias_card',compact('noticias'));
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');
 	}
 
@@ -45,9 +51,13 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/quienesomos');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -59,16 +69,24 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/financiamiento');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');		
 	}
 
 	public function contacto()
 	{
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
-		$this->load->view('template/contactos');
+		$this->load->view('template/contactos', compact('contacto'));
 		$this->load->view('template/piedepagina');		
 	}
 
@@ -135,9 +153,13 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/teayudamos');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -149,9 +171,13 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/talleresdesensibilizacion');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -163,9 +189,13 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/asistenciapsicologica');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -177,9 +207,13 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/gruposdeautoapoyo');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 	
@@ -187,13 +221,19 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->model('NoticiasModel');
 		$this->load->model('ProyectosModel');
+		$this->load->model('OrganizacionesModel');
 		
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
+		$organizaciones = $this->OrganizacionesModel->getOrganizacioness();
+
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
 
 		$this->load->view('template/cabecera');
-		$this->load->view('template/organizacionesdeapoyo');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/organizacionesdeapoyo', compact('organizaciones'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	} 
 
@@ -205,23 +245,34 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/recursos');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
-	public function libroguia()
+	public function librotestimonial()
 	{
 		$this->load->model('NoticiasModel');
 		$this->load->model('ProyectosModel');
+		$this->load->model('TestimonialModel');
 		
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
+		$testimoniales = $this->TestimonialModel->getTestimonials();
+		
+
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
 
 		$this->load->view('template/cabecera');
-		$this->load->view('template/libroguia');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/libroguia',compact('testimoniales'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -233,9 +284,13 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/herramientasdidacticas',compact('proyectos'));
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -243,13 +298,19 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->model('NoticiasModel');
 		$this->load->model('ProyectosModel');
+		$this->load->model('AudiovisualesModel');
 		
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
+		$audiovisuales = $this->AudiovisualesModel->getAudiovisualess();
+
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
 
 		$this->load->view('template/cabecera');
-		$this->load->view('template/herramientasaudiovisuales');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/herramientasaudiovisuales',compact('audiovisuales'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -257,13 +318,20 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->model('NoticiasModel');
 		$this->load->model('ProyectosModel');
+		$this->load->model('EstudiosModel');
 		
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
+		$estudios = $this->EstudiosModel->getEstudioss();
+
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 
 		$this->load->view('template/cabecera');
-		$this->load->view('template/estudios');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/estudios' ,compact('estudios'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 
@@ -275,9 +343,13 @@ class Inicio extends CI_Controller {
 		$noticias = $this->NoticiasModel->getNoticias();
 		$proyectos = $this->ProyectosModel->getProyectos();
 
+		$this->load->model('ContactosModel');
+		$contactos = $this->ContactosModel->getContactos();
+		$contacto = $contactos[0];
+
 		$this->load->view('template/cabecera');
 		$this->load->view('template/asesoriaeducativaylegal');
-		$this->load->view('template/footer',compact('proyectos','noticias'));
+		$this->load->view('template/footer',compact('proyectos','noticias','contacto'));
 		$this->load->view('template/piedepagina');			
 	}
 

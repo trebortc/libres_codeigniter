@@ -6,7 +6,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.766463219638!2d-78.5647753!3d-0.292123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d599f1fb8e332b%3A0x5e9e6a47c5c997e3!2sPC+Nerd!5e0!3m2!1ses!2sec!4v1540576423258" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.604579371744!2d-78.46193871694943!3d-0.16241901794476624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x494de438292c29b3!2sUDLA+Sede+Udlapark!5e0!3m2!1ses!2sec!4v1551976673846" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>     
         </div>
     </div>
 </div>
@@ -61,32 +61,32 @@
                 <div class="col-md-5 col-sm-11 text-white">
                     <div class="row pl-4">
                         <div class="col">
-                            <p class="lead font-size-1"> <i class="fa fa-building fa-lg" aria-hidden="true"></i>  Edif. Ejemplo nombre 6to Piso Ofic. 111</p>
+                            <p class="lead font-size-1"> <i class="fa fa-building fa-lg" aria-hidden="true"></i> <?php echo "".$contacto->direccion1.""; ?></p>
                         </div>
                     </div>
                     <div class="row pl-4">
                         <div class="col">
-                            <p class="lead font-size-1"><i class="fa fa-road fa-lg" aria-hidden="true"></i> Gaspar de Villarroel, y 6 de Diciembre</p>
+                            <p class="lead font-size-1"><i class="fa fa-road fa-lg" aria-hidden="true"></i> <?php echo "".$contacto->direccion2.""; ?></p>
                         </div>
                     </div>
                     <div class="row pl-4">
                         <div class="col">
-                            <p class="lead font-size-1"><i class="fa fa-fax fa-lg" aria-hidden="true"></i>  (02) 22222 222 </p>
+                            <p class="lead font-size-1"><i class="fa fa-fax fa-lg" aria-hidden="true"></i>  <?php echo "".$contacto->fax.""; ?> </p>
                         </div>
                     </div>
                     <div class="row pl-4">
                         <div class="col">
-                            <p class="lead font-size-1"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>  (02) 2222 222</p>
+                            <p class="lead font-size-1"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> <?php echo "".$contacto->telefono.""; ?> </p>
                         </div>
                     </div>
                     <div class="row pl-4">
                         <div class="col">
-                            <p class="lead font-size-1"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>  0999999999</p>
+                            <p class="lead font-size-1"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>  <?php echo "".$contacto->movil.""; ?> </p>
                         </div>
                     </div>
                     <div class="row pl-4">
                         <div class="col">
-                            <p class="lead font-size-1"><i class="fa fa fa-envelope fa-lg" aria-hidden="true"></i>  contacto@librerepublic.ec</p>
+                            <p class="lead font-size-1"><i class="fa fa fa-envelope fa-lg" aria-hidden="true"></i>  <?php echo "".$contacto->email.""; ?></p>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,7 @@
                                 <a class="nav-link font-weight-bold" href="<?php echo base_url();?>inicio/recursos">RECURSOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold" href="<?php echo base_url();?>inicio/libroguia">LIBRO GUÍA</a>
+                                <a class="nav-link font-weight-bold" href="<?php echo base_url();?>inicio/librotestimonial">LIBRO TESTIMONIAL</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link font-weight-bold" href="<?php echo base_url();?>inicio/herramientasdidacticas">HERRAMIENTAS DIDÁCTICAS</a>

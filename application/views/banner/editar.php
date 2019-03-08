@@ -10,11 +10,11 @@
             <form method="post" action='<?php echo base_url();?>Banner/actualizar/<?php echo $banner['id'];?>' enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="titulo">Titulo</label>
-                    <input type="text" class="form-control" id="titulo" name="titulo" value='<?php echo $banner['titulo'];?>' placeholder="Ingrese um titulo">
+                    <textarea class="form-control" id="titulo" name="titulo"><?php echo $banner['titulo'];?></textarea>
                 </div>
                 <div class="form-group">
                     <label for="descripcion">Descripción</label>
-                    <input type="text" class="form-control" id="descripcion" name="descripcion" value='<?php echo $banner['descripcion'];?>' placeholder="Ingrese una breve descripción">
+                    <textarea class="form-control" id="descripcion" name="descripcion"><?php echo $banner['descripcion'];?></textarea>
                 </div>
                 <div class="form-group">
                     <label for="imagen1">Imagen 1</label>
@@ -26,4 +26,17 @@
     </div>
 </div>
 
+<script src="<?php echo base_url();?>assets/vendor/ckeditor/ckeditor.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo base_url();?>assets/js/jquery-3.2.1.js" type="text/javascript" charset="utf-8" ></script>
+<script>
+	$(document).ready(function(){
+	    CKEDITOR.config.height = 400;
+		CKEDITOR.config.width  = 'auto';
+		CKEDITOR.replace('titulo');
+	});
+    $(document).ready(function(){
+	    CKEDITOR.config.height = 400;
+		CKEDITOR.config.width  = 'auto';
+		CKEDITOR.replace('descripcion');
+	});
+</script>

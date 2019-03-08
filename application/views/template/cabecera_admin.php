@@ -37,13 +37,28 @@
                     "<a class='p-4 nav-link  font-weight-bold' href='".base_url()."Banner/'>Banner</a>".
                 "</li>".
                 "<li class='nav-item'>".
-                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Libros/'>Libros</a>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Libros/'>Herramientas Didácticas</a>".
                 "</li>".
                 "<li class='nav-item'>".
                     "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Blog/'>Blog</a>".
                 "</li>".
                 "<li class='nav-item'>".
                     "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Contacto/'>Contacto</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Audiovisuales/'>Audiovisuales</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Contactos/'>Direcciones</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Estudios/'>Estudios</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Organizaciones/'>Organizaciones</a>".
+                "</li>".
+                "<li class='nav-item'>".
+                    "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Testimonial/'>Testimonial</a>".
                 "</li>".
                 "<li class='nav-item'>".
                     "<a class='p-4 nav-link font-weight-bold' href='".base_url()."Inicio/cerrar'>Cerrar</a>".

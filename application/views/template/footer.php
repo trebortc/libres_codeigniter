@@ -21,14 +21,22 @@
                 <div class="col-12 col-sm-10 col-md-10 col-lg-9 col-xl-3">
                     <h4 class="font-weight-bold pt-3">CONTÁCTO</h4>
                     <h5 class="font-weight-bold">Dirección:</h5>
-                    <h5 class="tam-letra-2">Universidad de Las Américas - Ecuador</h5>
-                    <h5 class="tam-letra-2">Av. Campus Udlapark: Subsuelo 4</h5>
+                    <?php
+                        echo "<h5 class='tam-letra-2'>".$contacto->direccion1."</h5>"
+                        ."<h5 class='tam-letra-2'>".$contacto->direccion2."</h5>";
+                    ?>
                     <h5 class="font-weight-bold">Email:</h5>
-                    <h5 class="tam-letra-2"></h5>
+                    <?php
+                        echo "<h5 class='tam-letra-2'>".$contacto->email."</h5>";
+                    ?>
                     <h5 class="font-weight-bold">Teléfono</h5>
-                    <h5 class="tam-letra-2">+593(2)3981000 Ext.:7513</h5>
+                    <?php
+                        echo "<h5 class='tam-letra-2'>".$contacto->telefono."</h5>";
+                    ?>
                     <h5 class="font-weight-bold">Móvil</h5>
-                    <h5 class="tam-letra-2">0984580875</h5>
+                    <?php
+                        echo "<h5 class='tam-letra-2'>".$contacto->movil."</h5>";
+                    ?>
                 </div>
             </div>        
         </div>
