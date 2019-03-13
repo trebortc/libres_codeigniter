@@ -11,7 +11,7 @@
                 foreach($banners as $banner)
                 {
                     echo "<div class='carousel-item ".($b? 'active':'')."'>".
-                        "<img class='d-block w-100' src='".base_url()."assets/img/".$banner->imagen1."' alt='First slide'>".
+                        "<img class='d-block w-100' src='".base_url()."uploads/".$banner->imagen1."' alt='First slide'>".
                         "<div class='carousel-caption'>".
                             "<div class='contenido-carousel'>".
                                 "<h1 class='font-weight-bold tam-letra-4'>".$banner->titulo."</h1>".
